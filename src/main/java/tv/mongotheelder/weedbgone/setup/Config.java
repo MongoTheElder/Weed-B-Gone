@@ -57,9 +57,9 @@ public class Config
 
     private static void powerConfig() {
         MAXPOWER = COMMON_BUILDER.comment("Maximum power storage")
-                .defineInRange("maxPower", 100000, 10000, Integer.MAX_VALUE);
+                .defineInRange("maxPower", 10000, 10000, Integer.MAX_VALUE);
         COST = COMMON_BUILDER.comment("Base RF cost per plant broken (0 = no RF required)")
-                .defineInRange("baseCost", 2, 0, 1000);
+                .defineInRange("baseCost", 1, 0, 1000);
         SOLAR_RECHARGE_RATE = COMMON_BUILDER.comment("Solar charging rate (RF/second)")
                 .defineInRange("rechargeRate", 10, 1, 10000);
     }
