@@ -30,6 +30,9 @@ public class LanguageGenerator extends LanguageProvider {
         add(Registration.STRING_TRIMMER.get(), "String Trimmer");
         add(Registration.MOTOR.get(), "Motor");
         add(Registration.SPOOL.get(), "Spool");
+
+        // General
+        add(MODID+".tooltip.power", "Energy: %s");
     }
 
     private void es_mx() {
@@ -37,5 +40,8 @@ public class LanguageGenerator extends LanguageProvider {
         add(Registration.STRING_TRIMMER.get(), "Recortadora de hilo");
         add(Registration.MOTOR.get(), "Motora");
         add(Registration.SPOOL.get(), "Carrete");
+
+        // General
+        add(MODID+".tooltip.power", "Energía: %s");
     }
 }
