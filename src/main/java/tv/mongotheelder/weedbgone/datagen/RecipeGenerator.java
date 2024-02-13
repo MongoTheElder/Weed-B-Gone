@@ -23,9 +23,9 @@ public class RecipeGenerator extends RecipeProvider {
     protected void buildRecipes(RecipeOutput consumer) {
         // Motor part
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Registration.MOTOR.get())
-                .pattern("cic")
-                .pattern("i i")
-                .pattern("cic")
+                .pattern("ici")
+                .pattern("c c")
+                .pattern("ici")
                 .define('c', Tags.Items.INGOTS_COPPER)
                 .define('i', Tags.Items.INGOTS_IRON)
                 .group("weedbgone")
