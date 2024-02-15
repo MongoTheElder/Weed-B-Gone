@@ -19,6 +19,7 @@ public class Config
     public static ModConfigSpec.BooleanValue ENABLE_SOLAR_RECHARGING;
     public static ModConfigSpec.IntValue SOLAR_RECHARGE_RATE;
     public static ModConfigSpec.IntValue MINIMUM_SOLAR_LIGHT_LEVEL;
+    public static ModConfigSpec.BooleanValue ENABLE_SAFE_FARMLAND;
 
 
     public static void register() {
@@ -53,6 +54,8 @@ public class Config
                 .define("enableSolar", true);
         MINIMUM_SOLAR_LIGHT_LEVEL = COMMON_BUILDER.comment("Minimum light level for solar charging (0 = charge in total darkness)")
                 .defineInRange("minLight", 10, 0, 16);
+        ENABLE_SAFE_FARMLAND = COMMON_BUILDER.comment("Enable safe farmland crop protection")
+                .define("enableFarmland", true);
     }
 
     private static void powerConfig() {
